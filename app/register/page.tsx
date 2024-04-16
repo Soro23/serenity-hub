@@ -1,13 +1,11 @@
-import SerenityHubLogo from '@/app/ui/serenityhub-logo';
-import LoginForm from '@/app/ui/login-form';
 import { Metadata } from 'next';
-import { Button } from '../ui/button';
-import { ArrowRightIcon } from '@heroicons/react/24/outline';
+import RegisterForm from '../ui/register-form';
+import SerenityHubLogo from '@/app/ui/serenityhub-logo';
 
 export const metadata: Metadata = {
-  title: 'Login',
+  title: 'Register',
 };
-export default function LoginPage() {
+export default function RegisterPage() {
   return (
     <main className="flex items-center justify-center md:h-screen">
       <div className="relative mx-auto flex w-full max-w-[400px] flex-col space-y-2.5 p-4 md:-mt-32">
@@ -16,10 +14,8 @@ export default function LoginPage() {
             <SerenityHubLogo />
           </div>
         </div>
-        <LoginForm />
+        <RegisterForm />
       </div>
     </main>
   );
 }
-
-
