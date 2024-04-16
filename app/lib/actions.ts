@@ -7,6 +7,12 @@ import { redirect } from 'next/navigation';
 import { signIn } from '@/auth';
 import { AuthError } from 'next-auth';
 
+export async function register(
+    prevState: string | undefined,
+    formData: FormData){
+
+}
+
 export async function authenticate(
     prevState: string | undefined,
     formData: FormData,
